@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CDN Form</title>
+		<!--<link href="assets/css/bootstrap.min.css" rel="stylesheet" media="screen">-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link href="assets/styles/styles.css" rel="stylesheet">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+
+	</head>
+	<body>
+		<div class="container-fluid text-center" style="width: 100%; background-color: #79BE88; margin-bottom: 20px;">
+			<div class="row container-width">
+ 				<h1>ESM CDN Form</h1>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+					<div class="form-area col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+
+            <form action="/" role="form" id="main-form" class="well" data-parsley-validate="">
+              <h3>Contact info</h3>
+              <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" required="">
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email"
+									class="form-control"
+									data-parsley-trigger="change"
+									required="">
+								</input>
+              </div>
+              <hr />
+              <h3>Merge two or more CDNs</h3>
+							<div class="cdns">
+	              <div class="form-group cdn">
+	                <label class="cdn-num">CDN #1</label>
+	                <input type="text"
+										class="form-control"
+										data-parsley-cdn=""
+										required=""
+										data-parsley-trigger="change">
+									</input>
+	              </div>
+								<div class="form-group cdn">
+									<label class="cdn-num">CDN #2</label>
+									<input type="text"
+										class="form-control"
+										data-parsley-cdn=""
+										required=""
+										data-parsley-trigger="change">
+									</input>
+								</div>
+							</div>
+              <div class="text-center">
+								<div class="row">
+									<div class="col add-cdn">
+										<i class="fa fa-plus-circle"></i> Add another CDN
+									</div>
+								</div>
+							</div>
+							<div class="text-center">
+								<input action="." class="btn btn-primary md-margin-top" type="submit"></input>
+							</div>
+            </form>
+
+					</div>
+			</div>
+	 </div>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+			integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+			crossorigin="anonymous">
+		</script>
+		<script src="assets/scripts/scripts.js"></script>
+		<script src="assets/scripts/parsley.min.js"></script>
+		<script src="assets/scripts/validation.js"></script>
+	</body>
+</html>

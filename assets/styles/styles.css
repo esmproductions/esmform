@@ -1,0 +1,84 @@
+h1 {
+  font-family: 'Open Sans';
+  font-size:40px;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+h3 {
+  font-family: 'Open Sans';
+  font-size:16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color:#287F3B;
+}
+
+.add-cdn:hover {
+  cursor: pointer;
+}
+
+.add-cdn {
+
+}
+
+.parsley-errors-list {
+  list-style: none;
+}
+
+.parsley-cdn, .parsley-required, .parsley-type  {
+  color: #d9534f;
+}
+
+.parsley-success {
+  background-color: #E1F8E6;
+}
+
+.parsley-error {
+  background-color: #FCE7E5;
+}
+
+/* Margin and padding
+-------------------------------------------------- */
+.xlg-margin-bottom {
+  margin-bottom: 100px;
+}
+
+.lg-margin-bottom {
+  margin-bottom: 60px;
+}
+
+.md-margin-bottom {
+  margin-bottom: 40px;
+}
+
+.sm-margin-bottom {
+  margin-bottom: 20px;
+}
+
+.lg-margin-top {
+  margin-top: 60px;
+}
+
+.md-margin-top {
+  margin-top: 40px;
+}
+
+.sm-margin-top {
+  margin-top: 20px;
+}
+
+.lg-margin-sides {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.md-margin-sides {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.sm-margin-sides {
+  margin-left: 20px;
+  margin-right: 20px;
+}

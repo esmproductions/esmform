@@ -1,0 +1,7 @@
+10/13/2017
+
+Only issue is form validation with dynamically added DOM elements.
+
+Ref:
+https://stackoverflow.com/questions/31173916/parsley-js-display-errors-near-fields-and-in-a-combined-list-above-form
+https://github.com/victorjonsson/jQuery-Form-Validator/issues/126
