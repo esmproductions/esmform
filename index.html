@@ -16,7 +16,7 @@
 	<body>
 		<div class="container-fluid text-center" style="width: 100%; background-color: #79BE88; margin-bottom: 20px;">
 			<div class="row container-width">
- 				<h1>ESM CDN Form</h1>
+ 				<h1>ESM course ID form</h1>
 			</div>
 		</div>
 		<div class="container">
@@ -50,26 +50,31 @@
 								</input>
               </div>
               <hr />
-              <h3>Merge two or more CDNs</h3>
-							<div class="cdns">
-	              <div class="form-group cdn">
-	                <label class="cdn-num">CDN #1</label>
-	                <input type="text"
-										id="cdn1"
-										name="cdn1"
-										class="form-control"
-										data-parsley-cdn=""
-										required=""
-										data-parsley-trigger="change">
-									</input>
+              <h3>Merge two or more course IDs</h3>
+							<div class="cids">
+	              <div class="form-group cid">
+	                <label class="cid-num">Course ID #1</label>
+									<div class="input-group">
+		                <input type="text"
+											id="parent"
+											name="parent"
+											class="form-control"
+											data-parsley-cid=""
+											required=""
+											data-parsley-trigger="change">
+											<span class="input-group-addon parent">
+												Parent
+											</span>
+										</input>
+									</div>
 	              </div>
-								<div class="form-group cdn">
-									<label class="cdn-num">CDN #2</label>
+								<div class="form-group cid">
+									<label class="cid-num">Course ID #2</label>
 									<input type="text"
-										id="cdn2"
-										name="cdn2"
+										id="2"
+										name="2"
 										class="form-control"
-										data-parsley-cdn=""
+										data-parsley-cid=""
 										required=""
 										data-parsley-trigger="change">
 									</input>
@@ -78,7 +83,7 @@
               <div class="text-center">
 								<div class="row">
 									<div class="col add-cdn">
-										<i class="fa fa-plus-circle"></i> Add another CDN
+										<i class="fa fa-plus-circle"></i> Add another Course ID
 									</div>
 								</div>
 							</div>
