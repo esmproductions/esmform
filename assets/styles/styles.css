@@ -14,12 +14,8 @@ h3 {
   color:#287F3B;
 }
 
-.add-cdn:hover {
+.add-cid:hover {
   cursor: pointer;
-}
-
-.add-cdn {
-
 }
 
 .parent {
@@ -28,6 +24,7 @@ h3 {
 }
 .parsley-errors-list {
   list-style: none;
+  color: #d9534f;
 }
 
 .parsley-cdn, .parsley-required, .parsley-type  {
