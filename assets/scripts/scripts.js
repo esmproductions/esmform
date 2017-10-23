@@ -9,7 +9,7 @@ $(document).ready(function(){
     var $label = $('<label></label>').text(`Course ID #${num_cids+1}`).addClass('cid-num')
     var $input = $('<input></input>').attr({
       'id': num_cids,
-      'name': num_cids,
+      'name': `${ordinal(num_cids)} ID`,
       'class': 'form-control',
       'type': 'text',
       'data-parsley-cid': '',
@@ -42,3 +42,10 @@ $(document).on('click','.remove-cid', function(){
   console.log(num_cids)
 
 })
+
+function ordinal(num) {
+  if (parseInt(num) == 1) return `${num}st`
+  else if (parseInt(num) == 2) return `${num}nd`
+  else if (parseInt(num) == 3) return `${num}rd`
+  else return `${num}th`
+}
