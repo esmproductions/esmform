@@ -8,7 +8,7 @@ $(document).ready(function(){
     var $inputGroup = $('<div></div>').addClass('input-group')
     var $label = $('<label></label>').text(`Course ID #${num_cids+1}`).addClass('cid-num')
     var $input = $('<input></input>').attr({
-      'id': num_cids,
+      'id': `${ordinal(num_cids)} ID`,
       'name': `${ordinal(num_cids)} ID`,
       'class': 'form-control',
       'type': 'text',
