@@ -14,14 +14,15 @@ $(document).ready(function(){
       'type': 'text',
       'data-parsley-cid': '',
       'required': '',
-      'data-parsley-trigger': 'change'
+      'data-parsley-trigger': 'change',
+      'data-parsley-errors-container': `.error${num_cids}`
     })
     var $span = $('<span></span>').attr({
       'type': 'button',
       'class': 'btn btn-danger input-group-addon remove-cid'
     }).text('remove')
 
-    var $field = $('<div></div>').addClass('error-log')
+    var $field = $('<div></div>').addClass(`error${num_cids}`)
 
     $inputGroup.append([$input,$span])
     $div.append([$label,$inputGroup,$field])
