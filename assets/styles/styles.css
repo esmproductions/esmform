@@ -22,6 +22,13 @@ h3 {
   background-color: #79BE88;
   color: white;
 }
+
+.banner {
+   width: 100%;
+   background-color: #79BE88;
+   margin-bottom: 20px;
+}
+
 .parsley-errors-list {
   list-style: none;
   color: #d9534f;

@@ -3,7 +3,6 @@ $(document).ready(function(){
   $('.add-cid').click(function(){
     $('#main-form').parsley().destroy()
     var num_cids = document.getElementsByClassName('cid').length
-    console.log(num_cids)
     var $div = $('<div></div>').addClass('form-group cid')
     var $inputGroup = $('<div></div>').addClass('input-group')
     var $label = $('<label></label>').text(`Course ID #${num_cids+1}`).addClass('cid-num')
@@ -29,6 +28,11 @@ $(document).ready(function(){
     $('.cids').append($div)
     $('#main-form').parsley()
   })
+
+  $('#parent-id').on('input', function() {
+    var cid = $(this).val()
+    $('#_subject').val(`Subject: Blackboard Course Merge - ${cid} (Parent)`)
+  })
 })
 
 $(document).on('click','.remove-cid', function(){
@@ -39,7 +43,6 @@ $(document).on('click','.remove-cid', function(){
     $(this).children('label').text(`Course ID #${count}`)
     count = count + 1
   })
-  console.log(num_cids)
 
 })
 
