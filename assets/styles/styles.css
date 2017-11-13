@@ -1,17 +1,16 @@
 h1 {
   font-family: 'Open Sans';
   font-size:40px;
-  color: white;
+  color: #FFD100;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
 h3 {
   font-family: 'Open Sans';
-  font-size:16px;
-  margin-top: 20px;
+  font-size:18px;
   margin-bottom: 20px;
-  color:#287F3B;
+  color: #428bca;
 }
 
 .add-cid:hover {
@@ -19,13 +18,17 @@ h3 {
 }
 
 .parent {
-  background-color: #79BE88;
-  color: white;
+  background-color: #003B71;
+  color: #FFD100;
 }
 
+label {
+  font-family: 'Open Sans';
+  color: #003B71;
+}
 .banner {
    width: 100%;
-   background-color: #79BE88;
+   background-color: #003B71;
    margin-bottom: 20px;
 }
 
