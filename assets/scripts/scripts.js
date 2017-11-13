@@ -7,8 +7,8 @@ $(document).ready(function(){
     var $inputGroup = $('<div></div>').addClass('input-group')
     var $label = $('<label></label>').text(`Course ID #${num_cids+1}`).addClass('cid-num')
     var $input = $('<input></input>').attr({
-      'id': `${ordinal(num_cids)} ID`,
-      'name': `${ordinal(num_cids)} ID`,
+      'id': `${ordinal(num_cids+1)} ID`,
+      'name': `${ordinal(num_cids+1)} ID`,
       'class': 'form-control',
       'type': 'text',
       'data-parsley-cid': '',
